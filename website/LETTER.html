@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday Rutik</title>
+	<style>
+		body{
+			margin: 20px;
+			height: 90vh;
+			text-align: center;
+			background-image: url(back.jpg);
+  			background-size: cover;
+  			background-position: center;
+			font-family: comic sans MS;
+		}
+		p{
+			margin-top: 50px;
+			text-align: center;
+			font-size: 32px;
+		}
+		.slideshow{
+			margin: -50px;
+			padding-top: 50px;
+			height: 700px;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+		.content{
+			margin: auto;
+			width: 190px;
+			perspective: 1000px;
+			position: relative;
+			padding-top: 80px;
+		}
+		.content-carrousel{
+			width: 100%;
+			position: absolute;
+			float: right;
+			animation:rotar 15s infinite linear;
+			transform-style: preserve-3d;
+		}
+		.content-carrousel:hover{
+			animation-play-state: paused;
+			cursor: pointer;
+		}
+		.content-carrousel figure{
+			width: 200px;
+			height: 400px;
+			border:1px solid #4d444d;
+			overflow: hidden;
+			position: absolute;
+			margin-bottom: 20px;
+		}
+		.content-carrousel figure:nth-child(1){
+			transform: rotateY(0deg) translateZ(300px);
+		}
+		.content-carrousel figure:nth-child(2){
+			transform: rotateY(40deg) translateZ(300px);
+		}
+		.content-carrousel figure:nth-child(3){
+			transform: rotateY(80deg) translateZ(300px);
+		}
+		.content-carrousel figure:nth-child(4){
+			transform: rotateY(120deg) translateZ(300px);
+		}
+		.content-carrousel figure:nth-child(5){
+			transform: rotateY(160deg) translateZ(300px);
+		}
+		.content-carrousel figure:nth-child(6){
+			transform: rotateY(200deg) translateZ(300px);
+		}
+		.content-carrousel figure:nth-child(7){
+			transform: rotateY(240deg) translateZ(300px);
+		}
+		.content-carrousel figure:nth-child(8){
+			transform: rotateY(280deg) translateZ(300px);
+		}
+		.content-carrousel figure:nth-child(9){
+			transform: rotateY(320deg) translateZ(300px);
+		}
+		.shadow{
+			position: absolute;
+			box-shadow: 0px 0px 20px 0px #000;
+			border-radius:2px;  
+		}
+		.content-carrousel img{
+			image-rendering: auto;
+			transition: all 300ms;
+			width: 100%;
+			height: 100%;
+
+		}
+		.content-carrousel img:hover{
+			transform: scale(1.2);
+			transition: all 300ms;	
+				}
+		@keyframes rotar{ 
+		from{
+			transform:rotateY(0deg);
+		} to{
+			transform:rotateY(360deg);
+		}
+	}
+	</style>
+</head>
+<body>
+<p style="color:white" style="font-size:30px">I know its your birthday and i have been waiting for this day. I am really sorry mei udhar nahii aa sakti corona k vajeh se.
+ Happiiee Birthday Rutik!!
+ Meine mera bestt try kiya teko wish karne k liye aur tera day special banane k liye. I have had the most beautiful moments, best laugh, happiiee tears and also healthy fights which made my life feel so complete.
+ All I am sure of is that we have alot more beautiful memories to make together. 
+ Love you Batlela and Cheers to us! </p>
+  
+  <section class="slideshow">
+	<div class="content">
+		<div class="content-carrousel">
+			<figure class="shadow"><img src="a (3).jpg"></figure>
+			<figure class="shadow"><img src="sid1.jpg"></figure>
+			<figure class="shadow"><img src="sid (2).jpg"></figure>
+			<figure class="shadow"><img src="sid (3).jpg"></figure>
+			<figure class="shadow"><img src="sid (1).jpg"></figure>	
+			<figure class="shadow"><img src="sid (5).jpg"></figure>
+			<figure class="shadow"><img src="sid (8).jpg"></figure>
+			<figure class="shadow"><img src="sid.jpg"></figure>
+			<figure class="shadow"><img src="b.jpg"></figure>
+			<figure class="shadow"><img src="sid (4).jpg"></figure>
+		</div>
+
+	</div>
+
+</section>
+</body>
+</html>
